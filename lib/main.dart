@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
+// ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
