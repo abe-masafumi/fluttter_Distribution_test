@@ -25,10 +25,10 @@ jobs:
       - run: flutter build apk --debug --split-per-abi
       - name: Push to Releases
         uses: ncipollo/release-action@v1
-          with:
-            artifacts: "build/app/outputs/apk/debug/*"
-            tag: v1.0.${{ github.run_rumber }}
-            token: ${{ secrets.TOKEN }}
+        with:
+          artifacts: "build/app/outputs/apk/debug/*"
+          tag: v1.0.${{ github.run_rumber }}
+          token: ${{ secrets.TOKEN }}
       - name: upload artifact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
